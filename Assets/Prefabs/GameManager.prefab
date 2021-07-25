@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &523219952335786523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 523219952335786526}
+  - component: {fileID: 523219952335786525}
+  - component: {fileID: 523219952335786524}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &523219952335786526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523219952335786523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &523219952335786525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523219952335786523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edd59568cb9a87a4d8f80aa85b879f43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardScript: {fileID: 523219952335786524}
+  numRoundsToWin: 5
+  startDelay: 3
+  endDelay: 3
+  players:
+  - playerNumber: 1
+    playerInstance: {fileID: 0}
+    wins: 0
+    score: 0
+    playerColor: {r: 0.16470589, g: 0.39215687, b: 0.69803923, a: 1}
+    spawnPoint: {fileID: 0}
+  - playerNumber: 1
+    playerInstance: {fileID: 0}
+    wins: 0
+    score: 0
+    playerColor: {r: 0.8980392, g: 0.18039216, b: 0.15686275, a: 1}
+    spawnPoint: {fileID: 0}
+  timeRemaining: 30
+  playerPrefab: {fileID: 6362571067375329045, guid: 3417e763f9be53b42aadebf5fb0895e6,
+    type: 3}
+--- !u!114 &523219952335786524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523219952335786523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf900aa58235054479aa709f33af90d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 8
+  rows: 8
+  boulderCount:
+    minimum: 25
+    maximum: 30
+  floorTiles:
+  - {fileID: 5818539873749984612, guid: dfb7ec26b02bae04d9984560584d8238, type: 3}
+  - {fileID: 7608977315752329419, guid: 7cba6755164a22c4899352a72c56964c, type: 3}
+  - {fileID: 6734909677617537292, guid: 621d56d36eb07eb4389fbe708d99c8c6, type: 3}
+  - {fileID: 6217859801569384878, guid: 2df40729a9932564482843cbf9f84b6d, type: 3}
+  leftWallTiles:
+  - {fileID: 3131912610356488824, guid: 17c8a01f45065054cbb8779cbb195dd8, type: 3}
+  - {fileID: 7914875702629959316, guid: 5637a20c145a6244a9fc8da4dcb8aa19, type: 3}
+  - {fileID: 1505772513585339801, guid: 8ddf6981963c41d4bb43a97b4b23ab62, type: 3}
+  rightWallTiles:
+  - {fileID: 8000865711199067455, guid: 59e4dfb8aa8a2dd49ae309bf177dbe63, type: 3}
+  - {fileID: 2135968438928363796, guid: b19db1b4161d8e541a7d9a26224923e1, type: 3}
+  - {fileID: 3739841058212949581, guid: 9563fa8ec25e97c418c629a6e0977355, type: 3}
+  topWallTiles:
+  - {fileID: 6331487462229649407, guid: 77af1bab74c958b4c8bfc421a85e4c7e, type: 3}
+  - {fileID: 4917211583948933415, guid: ca69b6bdf30a9024baa2920c96f4e8db, type: 3}
+  - {fileID: 4518064880842939955, guid: c6b0c6cf0f4537d498c16ce6d739e38c, type: 3}
+  bottomWallTiles:
+  - {fileID: 3256490239893941825, guid: 0b48ed7a327f3274e8cf1ce91c3c9fea, type: 3}
+  - {fileID: 7864904493755910918, guid: 1bc1a14a2b71b5348b4fc3369a1bedfe, type: 3}
+  - {fileID: 9000489057636388747, guid: 8093cb739652c5a468143e694c98a2b9, type: 3}
+  topLeftWallTile: {fileID: 6616195725753769216, guid: cbccec05b2838d3408dd1ff62b3792eb,
+    type: 3}
+  topRightWallTile: {fileID: 3389984907809951299, guid: 82a38d51a6fd9f245a0d0b3c2f8323fe,
+    type: 3}
+  bottomLeftWallTile: {fileID: 3334335796495463797, guid: 4a1e039f757c28c4db0fa77358d67336,
+    type: 3}
+  bottomRightWallTile: {fileID: 4609081755839973599, guid: 0a59d03aa32296b4db102300244c12e6,
+    type: 3}
+  boulderTiles:
+  - {fileID: 6246624270135110890, guid: 197f7875dfe925343b7dc8b857864939, type: 3}
+  leftGoalTile: {fileID: 9160347773445041840, guid: 9989af6bb4a44af4f8b9dff1b049f34a,
+    type: 3}
+  rightGoalTile: {fileID: 3011968955788943296, guid: 3d86248c8bd3d384ab2e2ffef9de8946,
+    type: 3}
